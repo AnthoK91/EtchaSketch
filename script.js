@@ -8,7 +8,17 @@ gridSize(10);
 
 //button selection
 buttonSelect.addEventListener("click", () => {
-    let clickEvent = prompt("How many squares would you like per row?")
+    let clickEvent;
+    while (true) {
+        clickEvent = prompt("How many squares would you like per row? (Enter a number up to 100)");
+
+        // Check if the input is a number and within the range
+        if (!isNaN(clickEvent) && clickEvent > 0 && clickEvent <= 100) {
+            break; // Break the loop if input is valid
+        }
+        alert("Please enter a valid number up to 100.");
+    }
+
     //remove the mini boxes
     const miniBoxes = document.querySelectorAll('.miniBox');
     miniBoxes.forEach((miniBox) => {
