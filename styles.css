@@ -1,0 +1,29 @@
+.miniBox {
+    border-style: solid;
+    border-width: 1px;
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 200px;
+    max-height: 200px;
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: -1px -1px -1px -1px;
+}
+
+.box {
+    border-style: solid;
+    border-width: 1px;
+    min-width: 800px;
+    min-height: 800px;
+    max-width: 801px;;
+    max-height: 800px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.outerbox {
+    display: flex;
+    justify-content: center;
+}
